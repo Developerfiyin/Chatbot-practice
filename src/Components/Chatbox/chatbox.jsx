@@ -16,20 +16,29 @@ const ChatMessage = ({message, sender}) => {
 const Chatbox = () => {
 
     const ChatMessages = [{
-        message: "Hello chat",
-         sender: "user"
-    }, { message: "hello ! may i help you today date ?" ,
-        sender : "bot"
-    }, {
-        message : "can you help you me with today's date." ,
-        bot : "user"
-    }, {
+           id : 1,
+           message: "Hello chat",
+           sender: "user"
+    
+        }, 
+        {   id : 2,
+            message: "hello ! may i help you today date ?" ,
+            sender : "bot"
+    }, 
+    {       id : 3 ,
+             message : "can you help you me with today's date." ,
+            bot : "user"
+    }, 
+    {     id : 4,
           message : "Today's date is october 1" ,
           sender : "bot"
-    }, {
+    },
+     {
+        id : 5,
         message : "oh okay  thank you !" ,
         sender : "user"
-    } , {
+    },
+    {   id : 6,
         message : "You are welcome, how can i help you further or that will be all for now !" ,
         sender : "bot"
     }
@@ -39,25 +48,11 @@ return(
     <>
     <input type="text" placeholder='send me a message now' size={30} />
     <button>Send</button>
-
-    <ChatMessage 
-    message="Hello chat"
-     sender="user"/>
-    <ChatMessage 
-    message="hello! How may i help you today?"
-     sender="bot"/>
-    <ChatMessage 
-     message="can you help me with today's date?" 
-     sender="user"/>
-    <ChatMessage 
-    message="Today's date is october 1"
-     sender="bot"/>
-    <ChatMessage 
-    message="Oh okay very well, thank you!" 
-    sender="user" />
-    <ChatMessage
-     message="You are welcome! how can i help you more!" 
-     sender="bot"/>    
+        
+            {ChatMessages.map(ChatMessage => (
+                <ChatMessage   key={ChatMessage.id} message={ChatMessage.sender} text={ChatMessage.message}  />
+            ))}
+            
     </>
 )
 }
