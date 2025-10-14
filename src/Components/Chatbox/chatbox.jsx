@@ -13,10 +13,16 @@ const ChatMess = ({message, sender}) => {
 }
 
        const Chatbox = () => {
-        
+        let counter = 1
 const butto =  myname =>  {
-    alert (` ${myname} stop clicking me  !`)
-    console.log({alert})
+    counter ++
+    if (counter < 4) {
+        alert(`${butto} have clicked me ${counter} `)
+    }
+
+    else {
+        alert("iyamas")
+    }
 }
 
       const chatMessages = [{
@@ -51,7 +57,7 @@ const butto =  myname =>  {
         return (
               <>                  
            <input type="text" placeholder='send me a message now' size={30} />
-            <button onClick={() => butto('stephen oladeji')}> click me </button>
+            <button onClick={() => butto('stephen oladeji') (counter)}> click me </button>
            {chatMessages.map((chatMessage) => {
             return ( 
               <ChatMess key={chatMessage.id} sender={chatMessage.sender} message={chatMessage.message}  />
