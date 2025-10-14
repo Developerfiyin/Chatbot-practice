@@ -13,9 +13,11 @@ const ChatMess = ({message, sender}) => {
 }
 
        const Chatbox = () => {
-        const butto = () => {
-            alert("what is going on ?")
-        }
+        
+const butto =  myname =>  {
+    alert (` ${myname} stop clicking me  !`)
+    console.log({alert})
+}
 
       const chatMessages = [{
            id : "1",
@@ -47,9 +49,9 @@ const ChatMess = ({message, sender}) => {
 ];
     
         return (
-              <>
+              <>                  
            <input type="text" placeholder='send me a message now' size={30} />
-            <button oncli={butto}>Send gini</button>
+            <button onClick={() => butto('stephen oladeji')}> click me </button>
            {chatMessages.map((chatMessage) => {
             return ( 
               <ChatMess key={chatMessage.id} sender={chatMessage.sender} message={chatMessage.message}  />
