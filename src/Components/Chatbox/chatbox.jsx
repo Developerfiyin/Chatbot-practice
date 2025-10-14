@@ -1,6 +1,6 @@
 import './chatbox.css'
 
-const ChatMessage = ({message, sender}) => {
+const ChatMess = ({message, sender}) => {
     return(
         <>
        <div>
@@ -8,24 +8,26 @@ const ChatMessage = ({message, sender}) => {
         {message}
         {sender === "user" && <img src="../src/assets/user.png" alt="The user's image" /> }
         </div>
-      
         </>
     );
 }
 
        const Chatbox = () => {
+        const butto = () => {
+            alert("what is going on ?")
+        }
 
-      const ChatMessages = [{
+      const chatMessages = [{
            id : "1",
            message: "Hello chat",
            sender: "user"
     
         }, 
-        {   id : "2",
+        {    id : "2",
             message: "hello ! may i help you today date ?" ,
             sender : "bot"
     }, 
-    {       id : "3" ,
+    {          id : "3" ,
              message : "can you help you me with today's date." ,
             sender : "user"
     }, 
@@ -34,11 +36,11 @@ const ChatMessage = ({message, sender}) => {
           sender : "bot"
     },
      {
-          id : "5",
+          id :     "5",
         message : "oh okay  thank you !" ,
-        sender : "user"
+        sender :  "user"
     },
-    {    id : "6",
+    {    id     :      "6",
         message : "You are welcome, how can i help you further or that will be all for now !" ,
         sender : "bot"
     }
@@ -47,13 +49,12 @@ const ChatMessage = ({message, sender}) => {
         return (
               <>
            <input type="text" placeholder='send me a message now' size={30} />
-            <button>Send</button>
-           {ChatMessages.map((ChatMessage) => {
+            <button oncli={butto}>Send gini</button>
+           {chatMessages.map((chatMessage) => {
             return ( 
-              <ChatMessage key={ChatMessage.id} sender={ChatMessage.sender} message={ChatMessage.message}  />
+              <ChatMess key={chatMessage.id} sender={chatMessage.sender} message={chatMessage.message}  />
             )
-          })
-}
+          })}
     </>
 )
 }
