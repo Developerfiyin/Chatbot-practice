@@ -14,7 +14,7 @@ const ChatMess = ({message, sender}) => {
 
        const Chatbox = () => {
         let counter = 1
-const butto =  myname =>  {
+const butto =  (myname) =>  {
     counter ++
     if (counter < 4) {
         alert(`${butto} have clicked me ${counter} `)
@@ -54,7 +54,7 @@ const butto =  myname =>  {
     }
 ];
     
-        return (
+        return (    
               <>                  
            <input type="text" placeholder='send me a message now' size={30} />
             <button onClick={() => butto('stephen oladeji') (counter)}> click me </button>
