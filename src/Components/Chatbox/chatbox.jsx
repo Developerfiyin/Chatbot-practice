@@ -1,4 +1,6 @@
-import './chatbox.css'
+import React from 'react';
+import './chatbox.css' ;
+
 
 const ChatMess = ({message, sender}) => {
     return(
@@ -9,28 +11,13 @@ const ChatMess = ({message, sender}) => {
         {sender === "user" && <img src="../src/assets/user.png" alt="The user's image" /> }
         </div>
         </>
-    );
-}
+    )}
 
        const Chatbox = () => {
-        let counter = 1
-const butto =  (myname) =>  {
-    counter ++
-    if (counter < 4) {
-        alert(`${butto} have clicked me ${counter} `)
-    }
-
-    else {
-        alert("iyamas")
-    }
-}
-
-      const chatMessages = [{
+     const [array, setArray] = React.useState([{
            id : "1",
            message: "Hello chat",
-           sender: "user"
-    
-        }, 
+           sender: "user"}, 
         {    id : "2",
             message: "hello ! may i help you today date ?" ,
             sender : "bot"
@@ -52,8 +39,8 @@ const butto =  (myname) =>  {
         message : "You are welcome, how can i help you further or that will be all for now !" ,
         sender : "bot"
     }
-];
-    
+] )
+
         return (    
               <>                  
            <input type="text" placeholder='send me a message now' size={30} />
