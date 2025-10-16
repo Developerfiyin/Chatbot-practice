@@ -14,7 +14,7 @@ const ChatMess = ({message, sender}) => {
     )}
 
        const Chatbox = () => {
-     const [array, setArray] = React.useState([{
+     const [chatMessages, setChatMessages] = React.useState([{
            id : "1",
            message: "Hello chat",
            sender: "user"}, 
@@ -41,10 +41,18 @@ const ChatMess = ({message, sender}) => {
     }
 ] )
 
+          function  messageChat() {
+            setChatMessages( [...chatMessages,{
+                message : "okay, i think i have more questions." ,
+                sender : "user",
+                id : crypto.randomUUID()
+            }] )
+          }
+
         return (    
               <>                  
            <input type="text" placeholder='send me a message now' size={30} />
-            <button onClick={() => butto('stephen oladeji') (counter)}> click me </button>
+            <button onClick={messageChat}> click me </button>
            {chatMessages.map((chatMessage) => {
             return ( 
               <ChatMess key={chatMessage.id} sender={chatMessage.sender} message={chatMessage.message}  />
