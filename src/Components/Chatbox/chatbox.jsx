@@ -15,7 +15,8 @@ const ChatMess = ({message, sender}) => {
 
        const Chatbox = () => {
      const [chatMessages, setChatMessages] = React.useState([{
-           id : "1",
+           id : "1",  
+            
            message: "Hello chat",
            sender: "user"}, 
         {    id : "2",
