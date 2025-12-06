@@ -53,7 +53,7 @@ const ChatMess = ({message, sender}) => {
                       id: crypto.randomUUID()
 
             }] )
-          }
+         nkcnknckenknks }
 
         return (    
               <>                  
