@@ -6,9 +6,9 @@ const ChatMess = ({message, sender}) => {
     return(
         <>
        <div>
-        {sender === "bot" && <img src="../src/assets/chatbot.png" alt="The chatbot image" /> }
+        {sender === "bot" && <img src="../src/assets/chatbot.png" alt="The chatbot image" />}
         {message}
-        {sender === "user" && <img src="../src/assets/user.png" alt="The user's image" /> }
+        {sender === "user" && <img src="../src/assets/user.png" alt="The user's image" />}
         </div>
         </>
     )}
@@ -16,9 +16,9 @@ const ChatMess = ({message, sender}) => {
        const Chatbox = () => {
      const [chatMessages, setChatMessages] = React.useState([{
            id : "1",  
-            
            message: "Hello chat",
            sender: "user"}, 
+
         {    id : "2",
             message: "hello ! may i help you today date ?" ,
             sender : "bot"
