@@ -6,24 +6,40 @@ const ChatMess = ({message, sender}) => {
     return(
         <>
        <div>
+<<<<<<< HEAD
         {sender === "bot" && <img src="../src/assets/chatbot.png" alt="The chatbot image" />}
         {message}
         {sender === "user" && <img src="../src/assets/user.png" alt="The user's image" />}
+=======
+        {sender === "bot" && <img src="../src/assets/chatbot.png" alt="The chatbot image" /> }
+        {message}
+        {sender === "user" && <img src="../src/assets/user.png" alt="The user's image" /> }
+>>>>>>> b397e114b29c692f3e5d4107494cbbe875ec7c6a
         </div>
         </>
     )}
 
        const Chatbox = () => {
      const [chatMessages, setChatMessages] = React.useState([{
+<<<<<<< HEAD
            id : "1",  
            message: "Hello chat",
            sender: "user"}, 
 
+=======
+           id : "1",
+           message: "Hello chat",
+           sender: "user"}, 
+>>>>>>> b397e114b29c692f3e5d4107494cbbe875ec7c6a
         {    id : "2",
             message: "hello ! may i help you today date ?" ,
             sender : "bot"
     }, 
+<<<<<<< HEAD
     {          id : "3" ,
+=======
+    {          id : "3",
+>>>>>>> b397e114b29c692f3e5d4107494cbbe875ec7c6a
              message : "can you help you me with today's date." ,
             sender : "user"
     }, 
@@ -32,7 +48,11 @@ const ChatMess = ({message, sender}) => {
           sender : "bot"
     },
      {
+<<<<<<< HEAD
           id :     "5",
+=======
+          id :  "5",
+>>>>>>> b397e114b29c692f3e5d4107494cbbe875ec7c6a
         message : "oh okay  thank you !" ,
         sender :  "user"
     },
@@ -53,7 +73,11 @@ const ChatMess = ({message, sender}) => {
                       id: crypto.randomUUID()
 
             }] )
+<<<<<<< HEAD
          nkcnknckenknks }
+=======
+          }
+>>>>>>> b397e114b29c692f3e5d4107494cbbe875ec7c6a
 
         return (    
               <>                  
