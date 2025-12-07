@@ -58,9 +58,9 @@ const ChatMess = ({message, sender}) => {
                       id: crypto.randomUUID()
 
             }] )
- HEAD
-         nkcnknckenknks }
-          }
+ 
+         }
+          
 
         return (    
               <>                  
