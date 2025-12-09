@@ -5,8 +5,8 @@ import './chatbox.css' ;
 const ChatMess = ({message, sender}) => {
     return(
         <>
-        <section className='py-8 px-4 m-4 '> 
-       <div className='bg-green-200'>
+        <section className='py-6 px-4 m-4 text-center bg-green-200'> 
+       <div className=''>
         {sender === "bot" && <img src="../src/assets/chatbot.png" alt="The chatbot image" /> }
         {message}
         {sender === "user" && <img src="../src/assets/user.png" alt="The user's image" /> }
