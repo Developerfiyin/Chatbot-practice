@@ -58,7 +58,8 @@ const ChatMess = ({message, sender}) => {
 
         return (    
               <>                  
-           <input type="text" placeholder='send me a message now' size={30} />
+           <input type="text" className='m-4 py-2 rounded-full outline-2 px-6 outline-green-200 focus:outline-none focus:ring-3 focus:ring-green-600'
+            placeholder='send me a message now' size={30} />
             <button onClick={messageChat}> click me </button>
            {chatMessages.map((chatMessage) => {
             return ( 
