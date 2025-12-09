@@ -58,8 +58,9 @@ const ChatMess = ({message, sender}) => {
          }
         return (    
               <>                  
-           <input type="text" placeholder='send me a message now' size={30} />
-            <button className='border-4 bg-blue' onClick={messageChat}> click me </button>
+           <input className='border-2 mr-3 m-3 w-60 py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-600 rounded-full '
+            type="text" placeholder='send me a message now' size={30} />
+            <button className='border-4 bg-blue-600' onClick={messageChat}> click me </button>
            {chatMessages.map((chatMessage) => {
             return ( 
               <ChatMess key={chatMessage.id} sender={chatMessage.sender} message={chatMessage.message}  />
