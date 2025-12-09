@@ -5,7 +5,7 @@ import './chatbox.css' ;
 const ChatMess = ({message, sender}) => {
     return(
         <>
-        <section className='py-6 px-4 m-4 text-center bg-green-200'> 
+        <section className='py-6 px-4 m-4 font-medium text-gray-600 text-center bg-green-200'> 
        <div className=''>
         {sender === "bot" && <img src="../src/assets/chatbot.png" alt="The chatbot image" /> }
         {message}
@@ -60,7 +60,7 @@ const ChatMess = ({message, sender}) => {
               <>                  
            <input type="text" className='m-4 py-2 rounded-full outline-2 px-6 outline-green-200 focus:outline-none focus:ring-3 focus:ring-green-600'
             placeholder='send me a message now' size={30} />
-            <button className='py-3 px-4 bg-green-300 rounded-lg m-4 hover:bg-green-400 hover:text-gray-300 font-semibold text-base text-gray-400' 
+            <button className='py-2 px-4 bg-green-300 rounded-md m-4 hover:bg-green-400 hover:text-gray-300 font-semibold text-base text-gray-400' 
              onClick={messageChat}> click me </button>
            {chatMessages.map((chatMessage) => {
             return ( 
