@@ -5,8 +5,8 @@ import './chatbox.css' ;
 const ChatMess = ({message, sender}) => {
     return(
         <>
-        <section>
-       <div className='py-8 px-4 m-2 border-4'>
+        <section className='py-8 px-4 flex justify-center items-center text-center '>
+       <div className='py-8 px-4 m-2 border-4 w-70'>
         {sender === "bot" && <img src="../src/assets/chatbot.png" alt="The chatbot image" />}
         {message}
         {sender === "user" && <img src="../src/assets/user.png" alt="The user's image" />}
@@ -14,7 +14,8 @@ const ChatMess = ({message, sender}) => {
         {message}
         {sender === "user" && <img src="../src/assets/user.png" alt="The user's image" /> }
         </div>
-        
+        </section>
+        </>
     )} 
 
        const Chatbox = () => {
@@ -57,7 +58,7 @@ const ChatMess = ({message, sender}) => {
  
          }
         return (    
-              <div>                  
+              <>                  
            <input className='border-2 mr-3 m-3 w-60 py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-600 rounded-full '
             type="text" placeholder='send me a message now' size={30} />
             <button className='border-4 bg-blue-600' onClick={messageChat}> click me </button>
@@ -66,8 +67,8 @@ const ChatMess = ({message, sender}) => {
               <ChatMess key={chatMessage.id} sender={chatMessage.sender} message={chatMessage.message}  />
             )
           })}
-      </div>
-    </ section>
+        ,m
+    </>
 )
 }
 
