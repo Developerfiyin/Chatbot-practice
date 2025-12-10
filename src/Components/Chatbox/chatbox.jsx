@@ -32,7 +32,7 @@ const ChatMess = ({message, sender}) => {
           message : "Today's date is october 1" ,
           sender : "bot"
     },
-    /* {
+    {
           id :  "5",
         message : "oh okay  thank you!" ,
         sender :  "user"
@@ -40,7 +40,7 @@ const ChatMess = ({message, sender}) => {
     {    id     :      "6",
         message : "You are welcome, how can i help you further or that will be all for now!" ,
         sender : "bot"
-    } */
+    } 
 ] )
 
           function  messageChat() {
