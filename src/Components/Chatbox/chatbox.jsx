@@ -9,7 +9,7 @@ const ChatMess = ({message, sender}) => {
        <div className=' text-teal-600'>
         {sender === "bot" && <img src="../src/assets/chatbot.png" alt="The chatbot image" /> }
         {message}
-        {sender === "us er" && <img src="../src/assets/user.png" alt="The user's image" /> }
+        {sender === "user" && <img src="../src/assets/user.png" alt="The user's image" /> }
         </div>
         </section>
         </>
@@ -32,7 +32,7 @@ const ChatMess = ({message, sender}) => {
           message : "Today's date is october 1" ,
           sender : "bot"
     },
-     {
+    /* {
           id :  "5",
         message : "oh okay  thank you!" ,
         sender :  "user"
@@ -40,7 +40,7 @@ const ChatMess = ({message, sender}) => {
     {    id     :      "6",
         message : "You are welcome, how can i help you further or that will be all for now!" ,
         sender : "bot"
-    }
+    } */
 ] )
 
           function  messageChat() {
