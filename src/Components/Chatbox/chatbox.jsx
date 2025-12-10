@@ -55,8 +55,11 @@ const ChatMess = ({message, sender}) => {
               id: crypto.randomUUID() ,
               sender : "user",
               message : " What  month is a 3 letter word"
-            }
-          ])
+            }, {
+              id: crypto.randomUUID(),
+              sender: "bot",
+              message: "May"
+            }])
           }
 
         return (    
