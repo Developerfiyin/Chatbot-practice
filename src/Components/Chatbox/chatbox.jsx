@@ -51,7 +51,12 @@ const ChatMess = ({message, sender}) => {
                       message: "Okay please, go ahead !!",
                       sender: "bot",
                       id: crypto.randomUUID()
-            }] )
+            }, {
+              id: crypto.randomUUID() ,
+              sender : "user",
+              message : " What  month is a 3 letter word"
+            }
+          ])
           }
 
         return (    
@@ -65,7 +70,7 @@ const ChatMess = ({message, sender}) => {
               <ChatMess key={chatMessage.id} sender={chatMessage.sender} message={chatMessage.message}  />
             )
           })}
-          
+
     </>
 ) 
 }
