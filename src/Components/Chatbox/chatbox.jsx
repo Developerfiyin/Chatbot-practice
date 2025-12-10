@@ -3,8 +3,10 @@ import './chatbox.css' ;
 
 
 const ChatMess = ({message, sender}) => {
+
     return(
         <>
+        
         <section className='py-6 px-4 m-4 font-medium text-gray-600 text-center rounded-lg bg-green-200'> 
        <div className=' text-teal-600'>
         {sender === "bot" && <img src="../src/assets/chatbot.png" alt="The chatbot image" /> }
@@ -13,6 +15,7 @@ const ChatMess = ({message, sender}) => {
         </div>
         </section>
         </>
+
     )}
 
        const Chatbox = () => {
