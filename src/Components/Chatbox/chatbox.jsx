@@ -52,9 +52,9 @@ const ChatMess = ({message, sender}) => {
                       sender: "bot",
                       id: crypto.randomUUID()
             }, {
-              id: crypto.randomUUID() ,
+              message:  " What  month is a 3 letter word",
               sender : "user",
-              message : " What  month is a 3 letter word"
+              id : crypto.randomUUID()
             }, {
               id: crypto.randomUUID(),
               sender: "bot",
@@ -64,7 +64,8 @@ const ChatMess = ({message, sender}) => {
 
         return (    
               <>                  
-           <input type="text" className='m-4 py-2 rounded-full outline-2 px-6 outline-green-200 focus:outline-none focus:ring-3 focus:ring-green-600'
+           <input type="text"
+            className='m-4 py-2 rounded-full outline-2 px-6 outline-green-200 focus:outline-none focus:ring-3 focus:ring-green-600'
             placeholder='send me a message now' size={30} />
             <button className='py-2 px-4 bg-green-300 ease-in-out duration-300 rounded-md m-4 hover:bg-green-400 hover:text-gray-300 font-semibold text-base text-gray-400' 
              onClick={messageChat}> Click me </button>
