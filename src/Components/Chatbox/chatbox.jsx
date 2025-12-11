@@ -37,13 +37,13 @@ const ChatMess = ({message, sender}) => {
         sender :  "user"
     },
     {    id  : "6",
-        message : "You are welcome, how can i help you further or that will be all for now!" ,
+        message : "You are welcome! how can i help you further? or that will be all for now!" ,
         sender : "bot"
     } 
 ] )
 
           function  messageChat() {
-            setChatMessages( [...chatMessages,{
+            setChatMessages([...chatMessages,{
                 message : "okay, i think i have more questions." ,
                 sender : "user",
                 id : crypto.randomUUID()
@@ -62,10 +62,10 @@ const ChatMess = ({message, sender}) => {
             }])
           }
 
-        return (    
+        return (   
               <>                  
            <input type="text"
-            className='m-4 py-2 rounded-full outline-2 px-6 outline-green-200 focus:outline-none focus:ring-3 focus:ring-green-600'
+            className='m-4 py-2 rounded-full outline-2 px-6 outline-green-200 focus:outline-none focus:ring-2 focus:ring-green-600'
             placeholder='send me a message now' size={30} />
             <button className='py-2 px-4 bg-green-300 ease-in-out duration-300 rounded-md m-4 hover:bg-green-400 hover:text-gray-300 font-semibold text-base text-gray-400' 
              onClick={messageChat}> Click me </button>
