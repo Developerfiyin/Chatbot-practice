@@ -38,7 +38,7 @@ const ChatMess = ({message, sender}) => {
     },
     {    id  : "6",
         message : "You are welcome! how can i help you further? or that will be all for now!" ,
-        sender : "bo
+        sender : "bot"
     } 
 ] )
 
