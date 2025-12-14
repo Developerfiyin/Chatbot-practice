@@ -58,7 +58,8 @@ const ChatMess = ({message, sender}) => {
             }, {
               id: crypto.randomUUID(),
               sender: "bot",
-              message: "May"
+              message: "The month that has 3 letters is the month of May"
+              
             }])
           }
 
