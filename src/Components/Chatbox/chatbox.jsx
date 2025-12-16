@@ -1,7 +1,7 @@
 import React from 'react';
 import './chatbox.css' ;
 
-const ChatMess = ({message, }) => {
+const ChatMess = ({message, sender}) => {
     return(
         <>
         <section className='py-6 px-4 m-4 font-medium text-gray-600 text-center rounded-lg bg-green-200'> 
