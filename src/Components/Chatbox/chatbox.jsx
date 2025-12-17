@@ -8,7 +8,10 @@ const ChatMess = ({message, sender}) => {
        <div className=' text-teal-600'>
         {sender === "bot" && <img src="../src/assets/chatbot.png" alt="The chatbot image" /> }
         {message}
-        {sender === "user" && <img src="../src/assets/user.png" alt="The user 
+        {sender === "user" && <img src="../src/assets/user.png" alt="The user image" /> }
+        </div>
+        </section>
+        </>
     )}
 
        const Chatbox = () => {
