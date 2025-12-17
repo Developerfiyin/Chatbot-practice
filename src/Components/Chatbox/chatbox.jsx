@@ -43,7 +43,7 @@ const ChatMess = ({message, sender}) => {
 ] )
 
           function  messageChat() {
-            setChatMessages([...chatMessages,{
+            setChatMessages([..chatMessages,{
                 message : "okay, i think i have more questions." ,
                 sender : "user",
                 id : crypto.randomUUID()
@@ -54,9 +54,9 @@ const ChatMess = ({message, sender}) => {
             }, {
               message:  "What month is a 3 letter word",
               sender : "user",
-              id : crypto.randomUUID()
+              id : crypto.randomUUID(
             }, {
-              id: crypto.randomUUID(),
+              id: crypto.randomUUID(,
               sender: "bot",
               message: "The only month that has 3 letters is the month of May."
 
