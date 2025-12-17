@@ -48,7 +48,7 @@ const ChatMess = ({message, sender}) => {
                 sender : "user",
                 id : crypto.randomUUID()
             }, {
-                      message: "Okay please, go
+                      message: "Okay please, go ahead !!",
                       sender: "bot",
                       id: crypto.randomUUID()
             }, {
