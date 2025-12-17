@@ -29,7 +29,7 @@ const ChatMess = ({message, sender}) => {
     }, 
     {        id : "4",
           message : "Today's date is october 1" ,
-          sender : "bot"\\\\\\\\rehty4 tnfdncp23rmwexsa
+          sender : "bot"
     },
     {
           id :  "5",
