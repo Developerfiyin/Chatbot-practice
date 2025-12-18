@@ -72,7 +72,7 @@ const ChatMess = ({message, sender}) => {
              onClick={messageChat}>Click me</button>
            {chatMessages.map((chatMessage) => {
             return ( 
-              <ChatMess key={chatMessage.id} sender={chatMessage.sender} message={chatMessage.message}/>
+              <ChatMes
             )
           })}
 
